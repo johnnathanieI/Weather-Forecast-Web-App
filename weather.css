@@ -20,6 +20,11 @@ body {
     text-align: center;
 }
 
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
 .base {
     display: flex;
     align-items: center;
@@ -62,15 +67,32 @@ body {
 
 .wind-speed, .humidity {
     position: absolute;
+    display: flex;
+    align-items: center;
+    top: 5px;
 }
 
 .wind-speed {
-    left: 31%;
+    left: 28%;
+}
+
+.wind-speed img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
 .humidity {
-    right: 24%;
+    right: 20%;
 }
+
+.humidity img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
 
 .predictions {
     border: 2px solid #fff;
