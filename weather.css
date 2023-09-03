@@ -11,13 +11,29 @@ body {
 
 .app-container {
     background: linear-gradient(135deg, #0470d6, #70b0eb, #b0cce7);
-    width: 90%;
+    width: 80%;
     max-width: 470px;
     color: #fff;
     margin: 100px auto 0;
     padding: 40px 35px;
     border-radius: 10px;
     text-align: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    border-radius: 20px;
+    width: 50%;
+    height: 30px;
+    padding: 15px;
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #222;
 }
 
 .weather-icon {
@@ -63,17 +79,19 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: 5px;
 }
 
 .wind-speed, .humidity {
     position: absolute;
     display: flex;
     align-items: center;
+    width: calc(50% - 10px);
     top: 5px;
 }
 
 .wind-speed {
-    left: 28%;
+    left: 25%;
 }
 
 .wind-speed img {
@@ -83,7 +101,7 @@ body {
 }
 
 .humidity {
-    right: 20%;
+    left: calc(50% + 10px);
 }
 
 .humidity img{
@@ -93,14 +111,14 @@ body {
 }
 
 
-
-.predictions {
+/*For future use if implementing predictions*/
+.predictions { 
     border: 2px solid #fff;
     border-radius: 10px;
     width: 60%;
     background-color: #0470d6;
     opacity: 0.5;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
